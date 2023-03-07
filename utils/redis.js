@@ -9,6 +9,7 @@ class RedisClient {
   }
 
   isAlive() {
+    //this.client.on('connect', () => this.client.connected);
     return this.client.connected;
   }
 
